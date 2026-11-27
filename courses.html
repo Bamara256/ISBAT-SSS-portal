@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses | ISBAT Student Portal (Practice)</title>
+    <link rel="stylesheet" href="portal.css">
+    <style>
+        /* Timetable course colours */
+        
+        .webtech {
+            background-color: #dbe7ff;
+            color: #1b3a8a;
+        }
+        
+        .cprog {
+            background-color: #ffe3d1;
+            color: #8a3b0b;
+        }
+        
+        .dbms {
+            background-color: #e1f3dc;
+            color: #24591a;
+        }
+        
+        .network {
+            background-color: #f1ddf7;
+            color: #5b1d73;
+        }
+    </style>
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <img class="sidebar-logo" src="isbat-logo.png" alt="ISBAT logo placeholder">
+        <p class="student-name">Amaara Shakira</p>
+        <nav class="side-nav">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="courses.html" class="active">My Courses</a>
+            <a href="fees.html">Fee Statement</a>
+        </nav>
+    </aside>
+
+    <div class="main">
+        <header class="topbar">
+            <h1>My Courses</h1>
+        </header>
+
+        <section>
+            <h2 class="section-title">Enrolled Courses</h2>
+            <div class="table-wrap">
+                <table class="grid-table">
+                    <caption class="sr-only">Enrolled courses this semester</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Course Code</th>
+                            <th scope="col">Course Name</th>
+                            <th scope="col">Credits</th>
+                            <th scope="col">Lecturer</th>
+                            <th scope="col">Room</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>WEB201</td>
+                            <td class="left">Web Technology</td>
+                            <td>4</td>
+                            <td class="left">Mr. Peter Mukasa</td>
+                            <td>Computer Lab 2</td>
+                            <td class="status-cell" style="background-color:#E1F5EE; color:#085041;">Active</td>
+                        </tr>
+                        <tr>
+                            <td>CPR101</td>
+                            <td class="left">C Programming</td>
+                            <td>3</td>
+                            <td class="left">Ms. Joan Namutebi</td>
+                            <td>Computer Lab 1</td>
+                            <td class="status-cell" style="background-color:#E1F5EE; color:#085041;">Active</td>
+                        </tr>
+                        <tr>
+                            <td>DBS202</td>
+                            <td class="left">Database Systems</td>
+                            <td>3</td>
+                            <td class="left">Mr. Isaac Ssekandi</td>
+                            <td>Room 204</td>
+                            <td class="status-cell" style="background-color:#E1F5EE; color:#085041;">Active</td>
+                        </tr>
+                        <tr>
+                            <td>NET203</td>
+                            <td class="left">Networking Fundamentals</td>
+                            <td>3</td>
+                            <td class="left">Ms. Ruth Atuhaire</td>
+                            <td>Networking Lab</td>
+                            <td class="status-cell" style="background-color:#E1F5EE; color:#085041;">Active</td>
+                        </tr>
+                        <tr>
+                            <td>SAD204</td>
+                            <td class="left">Systems Analysis and Design</td>
+                            <td>3</td>
+                            <td class="left">Mr. David Opio</td>
+                            <td>Room 101</td>
+                            <td class="status-cell" style="background-color:#E1F5EE; color:#085041;">Active</td>
+                        </tr>
+                        <tr>
+                            <td>WSA205</td>
+                            <td class="left">Windows Server Administration</td>
+                            <td>2</td>
+                            <td class="left">Ms. Sarah Birungi</td>
+                            <td>Server Lab</td>
+                            <td class="status-cell" style="background-color:#FAEEDA; color:#633806;">Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Weekly Timetable</h2>
+            <div class="table-wrap">
+                <table class="grid-table timetable">
+                    <caption class="sr-only">Weekly timetable, Monday to Friday, 8am to 5pm</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">8:00 am</th>
+                            <th scope="col">9:00 am</th>
+                            <th scope="col">10:00 am</th>
+                            <th scope="col">11:00 am</th>
+                            <th scope="col">12:00 pm</th>
+                            <th scope="col">1:00 pm</th>
+                            <th scope="col">2:00 pm</th>
+                            <th scope="col">3:00 pm</th>
+                            <th scope="col">4:00 pm</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Monday</th>
+                            <td colspan="2" class="webtech">WEB201 Web Technology<br>Computer Lab 2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td colspan="2" class="cprog">CPR101 C Programming<br>Computer Lab 1</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tuesday</th>
+                            <td></td>
+                            <td></td>
+                            <td colspan="2" class="dbms">DBS202 Database Systems<br>Room 204</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wednesday</th>
+                            <td></td>
+                            <td colspan="2" class="network">NET203 Networking Fundamentals<br>Networking Lab</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Thursday</th>
+                            <td colspan="2" class="cprog">CPR101 C Programming<br>Computer Lab 1</td>
+                            <td></td>
+                            <td colspan="2" class="webtech">WEB201 Web Technology<br>Computer Lab 2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Friday</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td colspan="2" class="dbms">DBS202 Database Systems<br>Room 204</td>
+                            <td colspan="2" class="network">NET203 Networking Fundamentals<br>Networking Lab</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="table-note">Each column is one hour; the last class of the day ends at 5:00 pm.</p>
+        </section>
+        <p class="practice-note">Practice portal for a web-design exercise. All data shown is fictional.</p>
+    </div>
+
+</body>
+
+</html>
