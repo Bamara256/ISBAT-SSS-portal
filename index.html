@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | ISBAT Student Portal (Practice)</title>
+    <link rel="stylesheet" href="portal.css">
+    <style>
+        /* Quick-links grid (2 x 2) */
+        
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .quick-card {
+            display: block;
+            background-color: #ffffff;
+            border: 1px solid #d5d9e0;
+            border-radius: 10px;
+            padding: 30px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #1A1A2E;
+        }
+        
+        .quick-card .label {
+            display: block;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .quick-card .go {
+            color: #3b5bdb;
+            font-weight: bold;
+        }
+        
+        .quick-card:hover {
+            border-color: #1A1A2E;
+            background-color: #f3f4f9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <img class="sidebar-logo" src="isbat-logo.png" alt="ISBAT logo placeholder">
+        <p class="student-name">Amaara Shakira</p>
+        <nav class="side-nav">
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="courses.html">My Courses</a>
+            <a href="fees.html">Fee Statement</a>
+        </nav>
+    </aside>
+
+    <div class="main">
+        <header class="topbar">
+            <div>
+                <h1>Welcome, Amaara Shakira</h1>
+                <p class="today" id="today">Friday, 27 November 2026</p>
+            </div>
+            <span class="badge" style="background-color:#EAF3DE; color:#27500A;">Active</span>
+        </header>
+
+        <section class="metrics">
+            <article class="metric-card">
+                <p class="metric-value">4.12</p>
+                <p class="metric-label">GPA (out of 5.0)</p>
+            </article>
+            <article class="metric-card">
+                <p class="metric-value">18</p>
+                <p class="metric-label">Credit Hours</p>
+            </article>
+            <article class="metric-card">
+                <p class="metric-value">UGX 450,000</p>
+                <p class="metric-label">Outstanding Fee Balance</p>
+            </article>
+        </section>
+
+        <section>
+            <h2 class="section-title">Quick Links</h2>
+            <div class="quick-links">
+                <a class="quick-card" href="index.html">
+                    <span class="label">Dashboard</span>
+                    <span class="go">Open &rarr;</span>
+                </a>
+                <a class="quick-card" href="courses.html">
+                    <span class="label">My Courses</span>
+                    <span class="go">Open &rarr;</span>
+                </a>
+                <a class="quick-card" href="fees.html">
+                    <span class="label">Fee Statement</span>
+                    <span class="go">Open &rarr;</span>
+                </a>
+                <a class="quick-card" href="profile.html">
+                    <span class="label">Update Profile</span>
+                    <span class="go">Open &rarr;</span>
+                </a>
+            </div>
+        </section>
+
+        <script>
+            // Show today's date (falls back to the text already in the page)
+            var el = document.getElementById("today");
+            el.textContent = new Date().toLocaleDateString("en-GB", {
+                weekday: "long",
+                day: "numeric",
+                month: "long",
+                year: "numeric"
+            });
+        </script>
+        <p class="practice-note">Practice portal for a web-design exercise. All data shown is fictional.</p>
+    </div>
+
+</body>
+
+</html>
